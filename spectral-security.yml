@@ -1,5 +1,6 @@
 extends:
-    - "@stoplight/spectral-owasp-ruleset"
+#    - "@stoplight/spectral-owasp-ruleset"
+    - "https://github.com/stoplightio/spectral-owasp-ruleset/blob/main/src/ruleset.ts"
 
 rules:
   "owasp:api2:2019-protection-global-unsafe": warn
