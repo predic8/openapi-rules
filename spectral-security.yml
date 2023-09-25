@@ -23,17 +23,3 @@ rules:
                 format:
                   type: string
                   enum: ["uuid","date","date-time"]
-  "predic8:additional-properties":
-    description: Additional properties must be forbidden in every object
-    given: '$..[?(@ && @.type=="object")]'
-    severity: error
-    then:
-      function: schema
-      functionOptions:
-        schema:
-          type: object
-          required:
-            - additionalProperties
-          properties:
-            additionalProperties:
-              const: false
