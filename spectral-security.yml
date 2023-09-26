@@ -14,7 +14,7 @@ rules:
       functionOptions:
         schema:
           type: object
-          oneOf:
+          anyOf:
             - required: ["maxLength"]
             - required: ["enum"]
             - required: ["const"]
