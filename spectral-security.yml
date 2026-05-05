@@ -2,9 +2,9 @@ extends:
     - "@stoplight/spectral-owasp-ruleset"
 
 rules:
-  "owasp:api9:2023-inventory-access": "off",
-  "owasp:api2:2023-write-restricted": "off",
-  "owasp:api4:2023-rate-limit": "off",
+  "owasp:api9:2023-inventory-access": "warn",
+  "owasp:api2:2023-write-restricted": "warn",
+  "owasp:api4:2023-rate-limit": "warn",
   "owasp:api4:2023-string-limit":
     message: "Schema of type string must specify maxLength!"
     description: "String size should be limited to mitigate resource exhaustion attacks. This can be done using `maxLength`."
