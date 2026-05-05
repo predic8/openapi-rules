@@ -2,7 +2,6 @@ extends:
     - "@stoplight/spectral-owasp-ruleset"
 
 rules:
-  "owasp:api2:2019-protection-global-unsafe": warn
   "owasp:api4:2019-rate-limit": warn
   "owasp:api4:2019-string-limit":
     message: "Schema of type string must specify maxLength!"
